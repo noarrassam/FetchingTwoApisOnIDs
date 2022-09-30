@@ -5,6 +5,7 @@
 ## Description
 
 It an app to fetch apis through two links to create a unique table depending on ids.
+You can also delete an ID through buttons.
 
 ## Used
 
