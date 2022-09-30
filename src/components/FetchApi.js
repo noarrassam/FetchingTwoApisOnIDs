@@ -76,8 +76,7 @@ export default function FetchApi() {
     setResult(arr);
   }, [albums]);
 
-  function handleOnDelete(e, idx) {
-    e.preventDefault();
+  function handleOnDelete(idx) {
     let array = [...result];
     array.splice(idx, 1);
     setResult(array);
@@ -111,7 +110,7 @@ export default function FetchApi() {
                     <input
                       type="button"
                       value="Delete"
-                      onClick={(e) => handleOnDelete(e, i)}
+                      onClick={() => handleOnDelete(i)}
                     />
                   </td>
                 </tr>
